@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type u /etc/passwd | sort users
+cut -d ':' -f 1,6 /etc/passwd | sort
